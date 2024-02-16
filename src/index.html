@@ -6,7 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   </head>
   <header>
-    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar bg-secondary" data-bs-theme="dark">
       <div class="container-fluid">
         <span class="text-white navbar-brand mb-0 h1">Navbar</span>
       </div>
@@ -14,58 +14,59 @@
   </header>
   <body>
     <div class="d-flex flex-wrap min-vh-100">
-      <div class="bg-primary col-3" id="contacts">
-        <ul class="p-1">
-          <li class="border border-white">
-            <div class="bg-secondary rounded-circle w-25 mb-2">img</div>
+      <div class=" col-3" id="contacts">
+        <ul class="list-unstyled me-1">
+          <li class="botCs m-2 p1">
+            <img src="https://www.shutterstock.com/image-photo/cyber-woman-corn-600nw-42829627.jpg" class="rounded-circle w-25 mb-2"></img>
             <div>
-              <p>Citizen 17</p>
+              <p class="fw-bold">Citizen 17</p>
               <p>sometimes I dream about cheese</p>
             </div>
           </li>
-          <li class="border border-white">
-            <div class="bg-secondary rounded-circle w-25 mb-2">img</div>
-            <div>
-              <p>Martin</p>
+          <li class="botCs m-2 p-1">
+            <img src="https://i0.wp.com/res.cloudinary.com/dgxbhwouq/image/upload/v1627926151/WTF%20Stock%20Photos/wtf-stock-photos_31.jpg?resize=662%2C595&ssl=1" class="rounded-circle w-25"></img>
+            <div class="">
+              <p class="fw-bold">Martin</p>
               <p>destroy them, destroy them all!</p>
             </div>
           </li>
-          <li class="border border-white">
-            <div class="bg-secondary rounded-circle w-25 mb-2">img</div>
+          <li class="botCs m-2 p-1">
+            <img src="https://losangle.com/wp-content/uploads/2018/05/WTF-Stock-Photos-12.jpg" class="rounded-circle w-25 mb-2">
             <div>
-              <p>Walter</p>
-              <p>{$user}. We have to cook!</p>
+              <p class="fw-bold">Walter</p>
+              <p>{$user}. We have to cook! Cook the methe</p>
             </div>
           </li>
         </ul>
       </div>
 
-      <div class="bg-success container-fluid col-9" id="chatbox">
-        <div class="row ">
+      <div class="col-9" id="chatbox">
+        <div class="ms-1 container-fluid row">
 
-          <div class="bot container bg-info rounded-pill w-50 col-6">
+          <div class="bot rounded mt-3 w-50 col-6">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus aut eum nostrum cumque recusandae iste beatae. Vero debitis magni unde, quod autem ipsam perspiciatis?</p>
           </div>
 
-          <div class="bg-danger col-6"></div>
+          <div class="col-6"></div>
         </div>
+        
+        <div class="me-1 container-fluid row">
+          <div class="col-6"></div>
 
-        <div class="row">
-          <div class="bg-danger col-6"></div>
-
-          <div class="user container bg-warning rounded-pill w-50 col-6">
+          <div class="user container rounded mt-3 w-50 col-6">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus laborum molestiae quidem sint eos, eaque asperiores inventore velit perferendis, impedit officia? Consequatur animi nisi voluptates!</p>
           </div>
         </div>
 
-        <div class="d-flex position-absolute bottom-0 end-0 w-75 mb-2">
+        <div class="d-flex position-absolute bottom-0 end-0 mb-1 m-4 " id="bar">
           <input class="form-control" id="message" placeholder="message goes here"></input>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
 
       </div>
 
       <!-- <div id="root"></div> -->
     </div>
+    <script src="https://kit.fontawesome.com/ad232e7379.js" crossorigin="anonymous"></script>
   </body>
 </html>
