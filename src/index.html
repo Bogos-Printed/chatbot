@@ -14,26 +14,40 @@
   </header>
   <body>
     <div class="d-flex flex-wrap min-vh-100">
-      <div class="bg-primary col-3">
-        <section class="d-flex p-1 border border-white">
-          <div class="bg-secondary rounded-circle w-25 h-50 align-self-center">img</div>
-          <div>
-            <p>Citizen 17</p>
-            <p>sometimes I dream about cheese</p>
-          </div>
-        </section>
+      <div class="bg-primary col-3" id="contacts">
+        <ul class=" p-1 border border-white">
+          <li class="d-flex flex-wrap">
+            <p class="bg-secondary rounded-circle w-25 h-50">img</p>
+            <div>
+              <p>Citizen 17</p>
+              <p>sometimes I dream about cheese</p>
+            </div>
+          </li>
+        </ul>
       </div>
-      <div class="bg-success col-9" id="chatbox">
-        <div class="bot container bg-info rounded-pill w-50 float-start">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus aut eum nostrum cumque recusandae iste beatae. Vero debitis magni unde, quod autem ipsam perspiciatis?</p>
+
+      <div class="bg-success container-fluid col-9" id="chatbox">
+        <div class="row ">
+
+          <div class="bot container bg-info rounded-pill w-50 col-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus possimus aut eum nostrum cumque recusandae iste beatae. Vero debitis magni unde, quod autem ipsam perspiciatis?</p>
+          </div>
+
+          <div class="bg-danger col-6"></div>
         </div>
-        <div class="user container bg-warning rounded-pill w-50 float-end align-content-center">
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus laborum molestiae quidem sint eos, eaque asperiores inventore velit perferendis, impedit officia? Consequatur animi nisi voluptates!</p>
+
+        <div class="row">
+          <div class="bg-danger col-6"></div>
+
+          <div class="user container bg-warning rounded-pill w-50 col-6">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus laborum molestiae quidem sint eos, eaque asperiores inventore velit perferendis, impedit officia? Consequatur animi nisi voluptates!</p>
+          </div>
         </div>
-        <div class="container">
+
+        <!--<div class="container">
           <input class="form-control" id="message" placeholder="message goes here"></input>
           <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
+        </div>-->
       </div>
       <div id="root"></div>
     </div>
