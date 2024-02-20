@@ -1,26 +1,43 @@
 @charset "utf-8";
 
+:root {
+  --nav: #264653; //self explanatory
+  --a: #287271; //contacts
+  --b: #f4a261; //bots in contacts
+  --c: #2a9d8f; //chat area
+  --d: #e9c46a; //bot chatbox
+  --e: #e76f51; //user chatbox
+}
+
 h1 {
   color: #ff9500;
 }
+
+nav{
+  background-color: var(--nav);
+}
+
 #contacts {
-  background-color: #F6FDC3;
+  background-color: var(--a);
 }
 
 .botCs {
-  background-color: #bcc2fb;
+  background-color: var(--b);
+  box-shadow: 5px 5px #08697c;
 }
 
 #chatbox {
-  background-color: #CDFADB;
+  background-color: var(--c);
 }
 
 .bot {
-  background-color: #FF8080;
+  background-color: var(--d);
+  box-shadow: 10px 10px #0a646e;
 }
 
 .user {
-  background-color: #FFCF96;
+  background-color: var(--e);
+  box-shadow: 10px 10px #0a646e;
 }
 
 #bar {
