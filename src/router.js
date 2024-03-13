@@ -1,3 +1,5 @@
+import Error404 from './controllers/404';
+
 const Router = class {
   constructor(routes = []) {
     this.path = window.location.pathname;
@@ -24,7 +26,7 @@ const Router = class {
     }
 
     if (!ifExist) {
-      console.log('ahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh');
+      new Error404();
     }
   }
 
